@@ -2,7 +2,7 @@
   "name": "app-token",
   "version": "1.0.9",
   "private": true,
-  "description": "A GitHub App for me",
+  "description": "A GitHub App to save/update it's installation token to the secrets of current repo. Then we can use the token in our workflows.",
   "scripts": {
     "clean": "rimraf lib",
     "lint": "eslint 'src/**/*.{js,ts}?(x)' --fix",
