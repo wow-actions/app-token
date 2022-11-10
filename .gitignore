@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+.vscode
+.nyc_output
+.DS_Store
+.vscode
+npm-debug.log
+yarn-error.log
+node_modules
+dist
+es
+lib
+test/coverage
+*.pem
+!mock-cert.pem
+.env

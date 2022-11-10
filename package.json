@@ -1,0 +1,57 @@
+{
+  "name": "app-token",
+  "version": "1.0.9",
+  "private": true,
+  "description": "A GitHub App for me",
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "eslint 'src/**/*.{js,ts}?(x)' --fix",
+    "build": "tsc",
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./lib/index.js",
+    "prebuild": "run-s clean",
+    "prepare": "is-ci || husky install .husky"
+  },
+  "author": {
+    "name": "bubkooo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "libsodium-wrappers": "^0.7.10",
+    "probot": "^12.2.8"
+  },
+  "devDependencies": {
+    "@bubkoo/commitlint-config": "^1.0.1",
+    "@bubkoo/eslint-config": "^1.2.0",
+    "@bubkoo/tsconfig": "^1.0.0",
+    "@types/libsodium-wrappers": "^0.7.10",
+    "@types/node": "^18.11.5",
+    "eslint": "^8.26.0",
+    "husky": "^8.0.1",
+    "is-ci": "^3.0.1",
+    "nock": "^13.0.5",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "rimraf": "^3.0.2",
+    "smee-client": "^1.1.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "pretty-quick —-staged"
+    ],
+    "*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "repository": "https://github.com/wow-ations/app-token.git",
+  "homepage": "https://github.com/wow-ations/app-token",
+  "bugs": "https://github.com/wow-ations/app-token/issues"
+}
