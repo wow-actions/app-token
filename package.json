@@ -61,7 +61,16 @@
   "engines": {
     "node": ">= 14"
   },
-  "repository": "https://github.com/wow-ations/app-token.git",
-  "homepage": "https://github.com/wow-ations/app-token",
-  "bugs": "https://github.com/wow-ations/app-token/issues"
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wow-actions/app-token.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wow-actions/app-token/issues"
+  },
+  "homepage": "https://github.com/wow-actions/app-token#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
 }
