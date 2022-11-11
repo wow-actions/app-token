@@ -58,13 +58,14 @@ jobs:
       - name: 📦　Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         with:
+          extends: '@bubkoo/semantic-release-config'
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.APP_TOKEN }}
-          GIT_AUTHOR_NAME: your-bot
+          GIT_AUTHOR_NAME: bubkoo
           GIT_AUTHOR_EMAIL: bubkoo.wy@gmail.com
-          GIT_COMMITTER_NAME: your-bot
+          GIT_COMMITTER_NAME: bubkoo
           GIT_COMMITTER_EMAIL: bubkoo.wy@gmail.com
