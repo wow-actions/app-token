@@ -1,7 +1,6 @@
 {
   "name": "@wow-actions/app-token",
-  "version": "1.0.1",
-  "private": true,
+  "version": "1.0.0",
   "description": "A GitHub App to save/update it's installation token to the secrets of current repo. Then we can use the token in our workflows.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
