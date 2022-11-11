@@ -58,7 +58,6 @@ jobs:
       - name: 📦　Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         with:
-          extends: '@bubkoo/semantic-release-config'
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git

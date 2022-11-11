@@ -1,5 +1,5 @@
 {
-  "name": "app-token",
+  "name": "@wow-actions/app-token",
   "version": "1.0.0",
   "private": true,
   "description": "A GitHub App to save/update it's installation token to the secrets of current repo. Then we can use the token in our workflows.",
@@ -17,17 +17,17 @@
   "files": [
     "lib"
   ],
+  "release": {
+    "extends": "@bubkoo/semantic-release-config"
+  },
+  "license": "MIT",
   "author": {
     "name": "bubkooo",
     "email": "bubkoo.wy@gmail.com"
   },
-  "license": "MIT",
   "dependencies": {
     "libsodium-wrappers": "^0.7.10",
     "probot": "^12.2.8"
-  },
-  "release": {
-    "extends": "@bubkoo/semantic-release-config"
   },
   "devDependencies": {
     "@bubkoo/commitlint-config": "^1.0.1",
