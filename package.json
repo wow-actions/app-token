@@ -3,6 +3,8 @@
   "version": "1.0.9",
   "private": true,
   "description": "A GitHub App to save/update it's installation token to the secrets of current repo. Then we can use the token in our workflows.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "clean": "rimraf lib",
     "lint": "eslint 'src/**/*.{js,ts}?(x)' --fix",
@@ -12,6 +14,9 @@
     "prebuild": "run-s clean",
     "prepare": "is-ci || husky install .husky"
   },
+  "files": [
+    "lib"
+  ],
   "author": {
     "name": "bubkooo",
     "email": "bubkoo.wy@gmail.com"
@@ -21,9 +26,13 @@
     "libsodium-wrappers": "^0.7.10",
     "probot": "^12.2.8"
   },
+  "release": {
+    "extends": "@bubkoo/semantic-release-config"
+  },
   "devDependencies": {
     "@bubkoo/commitlint-config": "^1.0.1",
     "@bubkoo/eslint-config": "^1.2.0",
+    "@bubkoo/semantic-release-config": "^1.4.0",
     "@bubkoo/tsconfig": "^1.0.0",
     "@types/libsodium-wrappers": "^0.7.10",
     "@types/node": "^18.11.5",
@@ -36,6 +45,7 @@
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
     "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.5",
     "smee-client": "^1.1.0",
     "tslib": "^2.4.0",
     "typescript": "^4.8.2"
