@@ -24,11 +24,14 @@
     "name": "bubkooo",
     "email": "bubkoo.wy@gmail.com"
   },
+  "peerDependencies": {
+    "probot": "^12.x"
+  },
   "dependencies": {
-    "libsodium-wrappers": "^0.7.10",
-    "probot": "^12.2.8"
+    "libsodium-wrappers": "^0.7.10"
   },
   "devDependencies": {
+    "probot": "^12.2.8",
     "@bubkoo/commitlint-config": "^1.0.1",
     "@bubkoo/eslint-config": "^1.2.0",
     "@bubkoo/semantic-release-config": "^1.4.0",
