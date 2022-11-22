@@ -51,8 +51,12 @@ async function deleteSecret(context: WorkflowRunContext, name: string) {
   )
 }
 
-function getSecretName() {
+function getTokenName() {
   return process.env.APP_TOKEN_NAME || 'APP_TOKEN'
+}
+
+function getAppName() {
+  return process.env.APP_NAME || 'APP_NAME'
 }
 
 export function log(message: string) {
@@ -72,19 +76,27 @@ export function log(message: string) {
 }
 
 export async function update(app: Probot, context: WorkflowRunContext) {
+  const { data: me } = await context.octokit.apps.getAuthenticated()
+  const appName = getAppName()
+  await createOrUpdateSecret(context, appName, me.name)
+  log(`app name: ${me.name}`)
+  log('APP NAME UPDATED')
+
   const client = await app.auth()
   const {
     data: { token },
   } = await client.apps.createInstallationAccessToken({
     installation_id: context.payload.installation!.id,
   })
-
-  const tokenName = getSecretName()
+  const tokenName = getTokenName()
   await createOrUpdateSecret(context, tokenName, token)
   log('APP TOKEN UPDATED')
 }
 
 export async function remove(context: WorkflowRunContext) {
-  const tokenName = getSecretName()
+  const appName = getAppName()
+  const tokenName = getTokenName()
+
+  await deleteSecret(context, appName)
   await deleteSecret(context, tokenName)
 }
