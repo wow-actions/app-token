@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/wow-actions/app-token/compare/v1.1.11...v1.1.12) (2022-11-22)
+
+
+### Bug Fixes
+
+* should use app slug as account name ([e01f11b](https://github.com/wow-actions/app-token/commit/e01f11b52eb664795b740ef8d68ff74ba7acd1c5))
+
 ## [1.1.11](https://github.com/wow-actions/app-token/compare/v1.1.10...v1.1.11) (2022-11-22)
 
 
