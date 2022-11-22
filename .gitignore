@@ -14,3 +14,6 @@ test/coverage
 *.pem
 !mock-cert.pem
 .env
+
+# Local Netlify folder
+.netlify
