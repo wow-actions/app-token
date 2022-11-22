@@ -28,6 +28,7 @@
     "probot": "^12.x"
   },
   "dependencies": {
+    "@probot/adapter-aws-lambda-serverless": "^3.0.1",
     "libsodium-wrappers": "^0.7.10"
   },
   "devDependencies": {
