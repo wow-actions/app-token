@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/wow-actions/app-token/compare/v1.1.10...v1.1.11) (2022-11-22)
+
+
+### Bug Fixes
+
+* bot name ([19f8c2a](https://github.com/wow-actions/app-token/commit/19f8c2ad87d8ad73ef3f6b63b5b277b47f578bd2))
+
 ## [1.1.10](https://github.com/wow-actions/app-token/compare/v1.1.9...v1.1.10) (2022-11-22)
 
 ## [1.1.9](https://github.com/wow-actions/app-token/compare/v1.1.8...v1.1.9) (2022-11-22)
