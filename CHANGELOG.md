@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/wow-actions/app-token/compare/v1.1.5...v1.1.6) (2022-11-22)
+
+
+### Bug Fixes
+
+* webhooks entrypoint ([032fff9](https://github.com/wow-actions/app-token/commit/032fff9e900c1f02ba2176ed3d423ec561e7b596))
+
 ## [1.1.5](https://github.com/wow-actions/app-token/compare/v1.1.4...v1.1.5) (2022-11-22)
 
 
