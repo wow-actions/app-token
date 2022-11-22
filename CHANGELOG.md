@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/wow-actions/app-token/compare/v1.0.5...v1.1.0) (2022-11-22)
+
+
+### Features
+
+* store app name in secrets ([33dab3f](https://github.com/wow-actions/app-token/commit/33dab3ff6abce8a7aacdeca7da98c6f7b6c95719))
+
 ## [1.0.5](https://github.com/wow-actions/app-token/compare/v1.0.4...v1.0.5) (2022-11-15)
 
 ## [1.0.4](https://github.com/wow-actions/app-token/compare/v1.0.3...v1.0.4) (2022-11-12)
