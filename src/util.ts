@@ -79,7 +79,6 @@ export async function update(app: Probot, context: WorkflowRunContext) {
   const { data: me } = await context.octokit.apps.getAuthenticated()
   const appName = getAppName()
   await createOrUpdateSecret(context, appName, me.name)
-  log(`app name: ${me.name} ${me.slug}`)
   log('APP NAME UPDATED')
 
   const client = await app.auth()
