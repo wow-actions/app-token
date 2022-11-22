@@ -1,3 +1,5 @@
+## [1.1.9](https://github.com/wow-actions/app-token/compare/v1.1.8...v1.1.9) (2022-11-22)
+
 ## [1.1.8](https://github.com/wow-actions/app-token/compare/v1.1.7...v1.1.8) (2022-11-22)
 
 ## [1.1.7](https://github.com/wow-actions/app-token/compare/v1.1.6...v1.1.7) (2022-11-22)
