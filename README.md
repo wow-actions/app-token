@@ -13,6 +13,8 @@ The app's installation token can be used to **impersonate** a GitHub App when `s
 
 ## Usage
 
+Visit the [installation page](https://github.com/marketplace/save-app-token-to-secrets) and install the GitHub App on your repositories. That's all there is to it ❤️
+
 Two secrets with name `APP_NAME` and `APP_TOKEN` will be created or updated before any workflow run, so we can use the secrets in our workflow.
 
 ```yaml
